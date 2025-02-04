@@ -1,0 +1,69 @@
+/* userNav.css */
+.nav-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 80px;
+    width: 75%;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .logo {
+    color: #FF385C;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }  
+  
+  .pill-button {
+    border-radius: 2rem !important;
+    border: 1px solid #DDDDDD !important;
+    padding: 5px 5px 5px 12px !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08) !important;
+    color: #717171 !important;
+    text-transform: none !important;
+    background-color: white !important;
+  }
+  
+  .pill-button:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18) !important;
+    background-color: white !important;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
+  
+  /* Note: For Material-UI Menu styling, we'll need to use their styling solution 
+     since it's dynamically created outside the normal DOM hierarchy */
+  :global(.MuiMenu-paper) {
+    margin-top: 8px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important;
+    min-width: 200px !important;
+  }
+  
+  /* Additional styles for the MenuItems */
+  .MuiMenuItem-root {
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+  }
+  
+  /* Add space between the menu icon and account circle */
+  .button-content .MuiSvgIcon-root + .MuiSvgIcon-root {
+    margin-left: 8px;
+  }
+
+  .MuiPaper-root {
+    margin-top: 8px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important;
+    min-width: 200px !important;
+  }

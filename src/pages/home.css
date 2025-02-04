@@ -1,0 +1,21 @@
+.listing-card-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 743px) {
+    .listing-card-section {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+}
+
+@media (min-width: 1128px) {
+    .listing-card-section {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
